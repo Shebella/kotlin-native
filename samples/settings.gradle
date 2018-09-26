@@ -22,6 +22,5 @@ include ':uikit'
 include ':win32'
 include ':videoplayer'
 include ':workers'
+include ':serialization'
 
-includeBuild '../shared'
-includeBuild '../tools/kotlin-native-gradle-plugin'

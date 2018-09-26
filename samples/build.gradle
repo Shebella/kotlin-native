@@ -1,6 +1,7 @@
 subprojects {
     buildscript {
         repositories {
+            mavenLocal()
             maven {
                 url 'https://cache-redirector.jetbrains.com/maven-central'
             }
@@ -30,6 +31,7 @@ task buildSamplesWithPlatformLibs() {
     dependsOn ':win32:build'
     dependsOn ':workers:build'
     dependsOn ':globalState:build'
+    dependsOn ':serialization:build'
 }
 
 task buildAllSamples() {
